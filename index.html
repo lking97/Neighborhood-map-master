@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Neighborhood Map</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-        <div class="search" id="search">
-            <input class="search-box" id="search-box" data-bind="textInput: searchTerm, valueUpdate: 'afterkeydown'" />
-        </div>
-        <div class="app" id="app">
-            <ul class="results" id="results" data-bind="foreach: filteredList">
-                <li class="place" id="place" data-bind="text: name, click: bounce"></li>
-            </ul>
-            <div class="map" id="map">Whoops! Something went bad, try again!</div>
-        </div>
-            <script src='js/knockout-3.4.0.js'></script>
-    <script src='js/jquery-1.12.0.min.js'></script>
-    <script src='js/app.js'></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA6qoUKQ3WJQd4ZxAahhFPM80WJbw-yws&callback=startApp&libraries=places" onerror="errorHandling()"></script>
-</body>
-</html>
+    <head>
+        <title>Neighborhood Map</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+            <meta charset="utf-8">
+                <link rel="stylesheet" href="css/styles.css">
+                </head>
+                <body>
+                    <div class="search" id="search">
+                        <input class="search-box" id="search-box" data-bind="textInput: searchTerm, valueUpdate: 'afterkeydown'" />
+                    </div>
+                    <div class="app" id="app">
+                        <ul class="results" id="results" data-bind="foreach: filteredList">
+                            <li class="place" id="place" data-bind="text: name, click: bounce"></li>
+                        </ul>
+                        <div class="map" id="map">Whoops! Something went bad, try again!</div>
+                    </div>
+                    <script src='js/knockout-3.4.0.js'></script>
+                    <script src='js/jquery-1.12.0.min.js'></script>
+                    <script src='js/app.js'></script>
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA6qoUKQ3WJQd4ZxAahhFPM80WJbw-yws&callback=startApp&libraries=places" onerror="errorHandling()"></script>
+                </body>
+            </html>
